@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, 
+            initial-scale=1.0,
+            minimum-scale=1,
+            maximum-scale=1,
+            user-scalable=no,
+            viewport-fit=cover">
+    <title>Yesy Resume</title>
+    <style>* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        #demo {
+            word-break: break-all;
+        }
+        
+        #div1 {
+            position: fixed;
+            top: 50px;
+            right: 0;
+            transform: translateX(-50%);
+        }
+        
+        #div1::before {
+            content: '';
+            display: block;
+            position: absolute;
+        }
+        
+        #div1::after {
+            content: '';
+            display: block;
+            position: absolute;
+        }
+        
+        @media(max-width: 500px) {
+            /*媒体查询判断是否是手机*/
+            #demo {
+                height: 50vh;
+                overflow: hidden;
+                overflow-y: auto;
+            }
+            #div1 {
+                position: relative;
+                right: 0;
+                top: 80px;
+                left: 50%;
+            }
+            #divWrapper {
+                height: 50vh !important;
+            }
+        }</style>
+
+</head>
+
+<body>
+    <div id="demo"></div>
+    <style id="style"></style>
+    <div id="divWrapper">
+        <div id="div1"></div>
+    </div>
+    <script src="/main.1f19ae8e.js"></script>
+</body>
+
+</html>
